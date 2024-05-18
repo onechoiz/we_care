@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us{% endblock %}
+
+{% block content %}
+<div>
+  <article>
+     {% for a in about %}
+ <h2>{{ a.heading }}</h2>
+  <p>{{ a.body }}</p>
+  {% endfor %}
+  </article>
+ 
+ 
+</div>
+{% endblock %}

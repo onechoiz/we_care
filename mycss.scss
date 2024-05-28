@@ -1,0 +1,343 @@
+
+
+
+
+// .logo_box {
+//   width: 100px;
+// }
+
+// .logo_box__image {
+//   width: 100%;
+// }
+
+/
+
+// li {
+//   list-style: none;
+// }
+// a {
+//   text-decoration: none;
+//   text-transform: capitalize;
+//   color: #000;
+// }
+// }
+
+
+// // donate button
+// .button {
+//   width: 100px;
+//   display: block;
+//   background-color: bisque;
+//   color: #000;
+//   padding: 10px;
+//   border-radius: 10px;
+//   text-align: center;
+//   font-size: 20px;
+//   text-decoration: none;
+// }
+
+// .contact-form {
+//   max-width: 600px;
+//   margin: 50px auto;
+//   padding: 20px;
+//   background-color: #fff;
+//   border-radius: 10px;
+//   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+//   h2 {
+//     text-align: center;
+//     margin-bottom: 20px;
+//     font-size: 24px;
+//     color: #333;
+//   }
+
+//   form {
+//     display: flex;
+//     flex-direction: column;
+
+//     .form-group {
+//       margin-bottom: 15px;
+
+//       label {
+//         display: block;
+//         margin-bottom: 5px;
+//         font-size: 14px;
+//         color: #666;
+//       }
+
+//       input,
+//       textarea {
+//         width: 100%;
+//         padding: 10px;
+//         font-size: 14px;
+//         border: 1px solid #ccc;
+//         border-radius: 5px;
+//         transition: border-color 0.3s;
+
+//         &:focus {
+//           border-color: pink;
+//           outline: none;
+//         }
+//       }
+
+//       textarea {
+//         resize: vertical;
+//       }
+//     }
+
+//     button {
+//       padding: 10px 20px;
+//       font-size: 16px;
+//       color: #fff;
+//       background-color: rgb(251, 152, 168);
+//       border: none;
+//       border-radius: 5px;
+//       cursor: pointer;
+//       transition: background-color 0.3s;
+
+//       &:hover {
+//         background-color: pink;
+//       }
+//     }
+//   }
+// }
+// // Import any external stylesheets if needed
+
+// // Base styles
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// // Body styles
+// body {
+//   font-family: Arial, sans-serif;
+//   background-color: #f4f4f4;
+// }
+
+// // Container styles
+// .container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 20px;
+// }
+
+// // Blog post list styles
+// .blog_posts {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   .blog_posts_li {
+//   background-color: #fff;
+//   margin-bottom: 20px;
+//   padding: 10px;
+// }
+// .blog_posts_li__a {
+//   color: #333;
+//   text-decoration: none;
+//   font-weight: bold;
+// }
+// .blog_posts_li__a:hover {
+//   text-decoration: underline;
+// }
+
+// .blog_posts_li__p {
+//   margin-top: 5px;
+//   color: #777;
+// }
+
+// }
+
+
+
+
+
+
+
+// //  footer styles
+// footer {
+//   width: 100%;
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 20px 20px 5px;
+// }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+//   background-color: rgb(246, 222, 225);
+ background-color: rgb(24, 23, 23); 
+}
+
+// .logo_box {
+//   width: 100px;
+// }
+
+// .logo_box__image {
+//   width: 100%;
+// }
+
+// nav {
+//   width: 50%;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 30%;
+//   padding: 10px;
+//   ul {
+//   width: 100%;
+//   display: flex;
+//   justify-content: space-around;
+// }
+
+// li {
+//   list-style: none;
+// }
+// a {
+//   text-decoration: none;
+//   text-transform: capitalize;
+//   color: #000;
+// }
+// }
+
+
+// // donate button
+// .button {
+//   width: 100px;
+//   display: block;
+//   background-color: bisque;
+//   color: #000;
+//   padding: 10px;
+//   border-radius: 10px;
+//   text-align: center;
+//   font-size: 20px;
+//   text-decoration: none;
+// }
+
+// .contact-form {
+//   max-width: 600px;
+//   margin: 50px auto;
+//   padding: 20px;
+//   background-color: #fff;
+//   border-radius: 10px;
+//   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+//   h2 {
+//     text-align: center;
+//     margin-bottom: 20px;
+//     font-size: 24px;
+//     color: #333;
+//   }
+
+//   form {
+//     display: flex;
+//     flex-direction: column;
+
+//     .form-group {
+//       margin-bottom: 15px;
+
+//       label {
+//         display: block;
+//         margin-bottom: 5px;
+//         font-size: 14px;
+//         color: #666;
+//       }
+
+//       input,
+//       textarea {
+//         width: 100%;
+//         padding: 10px;
+//         font-size: 14px;
+//         border: 1px solid #ccc;
+//         border-radius: 5px;
+//         transition: border-color 0.3s;
+
+//         &:focus {
+//           border-color: pink;
+//           outline: none;
+//         }
+//       }
+
+//       textarea {
+//         resize: vertical;
+//       }
+//     }
+
+//     button {
+//       padding: 10px 20px;
+//       font-size: 16px;
+//       color: #fff;
+//       background-color: rgb(251, 152, 168);
+//       border: none;
+//       border-radius: 5px;
+//       cursor: pointer;
+//       transition: background-color 0.3s;
+
+//       &:hover {
+//         background-color: pink;
+//       }
+//     }
+//   }
+// }
+// // Import any external stylesheets if needed
+
+// // Base styles
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
+
+// // Body styles
+// body {
+//   font-family: Arial, sans-serif;
+//   background-color: #f4f4f4;
+// }
+
+// // Container styles
+// .container {
+//   max-width: 1200px;
+//   margin: 0 auto;
+//   padding: 20px;
+// }
+
+// // Blog post list styles
+// .blog_posts {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+//   .blog_posts_li {
+//   background-color: #fff;
+//   margin-bottom: 20px;
+//   padding: 10px;
+// }
+// .blog_posts_li__a {
+//   color: #333;
+//   text-decoration: none;
+//   font-weight: bold;
+// }
+// .blog_posts_li__a:hover {
+//   text-decoration: underline;
+// }
+
+// .blog_posts_li__p {
+//   margin-top: 5px;
+//   color: #777;
+// }
+
+// }
+
+
+
+
+
+

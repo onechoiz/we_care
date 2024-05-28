@@ -5,92 +5,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href={% static 'css/style.css' %}>
-    <title>{% block title %}
-        {% endblock  %} | WeCare</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-       header {
-        width: 100%;
-        margin: 0;
-        padding: 20px;
-        display: flex;
-        justify-content: space-between;
-        background-color: blanchedalmond;
-        align-items: center;
-
-       }
-       nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 30%;
-            padding: 10px;
-
-       
-
-        }
-        ul{
-            
-            display: flex;
-            justify-content: space-around;
-
-        }
-        li{
-            list-style: none;
-        }
-        a {
-            text-decoration: none;
-            text-transform: capitalize;
-            color: #000;
-        }
-
-        footer{
-            width: 100%;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 20px 5px
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'css/css.css' %}">
+    <title>{% block title %}{% endblock %} | WeCare</title>
   </head>
 
   <body>
     <header class="container">
-
-        <div>
-            <img src="" alt="">
-        </div>
+      <div class="logo_box">
+        <a href="{% url 'home' %}">
+          <img class="logo_box__image" src="{% static 'images/logo.png' %}" alt="">
+        </a>
+      </div>
       <nav>
-      
-          <li> <a href={% url "about" %}> About us</a></li>
-          <li> <a href={% url "donate" %}>Donate </a></li>
-          <li> <a href={% url "pets" %}>pets</a></li>
-          <li> <a href={% url "blog" %}>blog</a></li>
-          <li> <a href={% url "adopt" %}>adopt</a></li>
-          <li> <a href={% url "contact" %}>contact</a></li>
+        <ul>
+          <li><a href="{% url 'about' %}">About us</a></li>
+          <li><a href="{% url 'donate' %}">Donate</a></li>
+          <li><a href="{% url 'pets' %}">Pets</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'adopt' %}">Adopt</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
       </nav>
     </header>
-      <main>
-        {% block home_template %}{% endblock  %}
-            {% block  dogs_template %}
-            {% endblock  %}
-            {% block about_template %}
-            {% endblock  %}
-            {% block single_pet_template %}{% endblock single_pet_template %}
-      </main>
+    <main>
+      {% block home_template %}{% endblock %}
+      {% block dogs_template %}{% endblock %}
+      {% block about_template %}{% endblock %}
+      {% block single_pet_template %}{% endblock %}
+      {% block contact_template %}{% endblock %}
+      {% block blog_template %}{% endblock  %}
+    </main>
     <footer>
-      <p>become a volunteer</p>
+      <p>Become a volunteer</p>
       <p>Copyright &copy; 2024</p>
     </footer>
 
-    <script src={% static 'js/script.js'%}></script>
+    <script src="{% static 'js/script.js' %}"></script>
   </body>
 </html>

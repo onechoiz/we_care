@@ -1,23 +1,24 @@
 {% extends "base.html" %}
 {% block title %}
-  our dogs
+  Our dogs
 {% endblock title %}
 
 {% block dogs_template %}
 
 
-  <div>
-    <h1>Our Pets</h1>
-    <div>
-      {% for pet in pets %}
-      <div>
+ <div class="pets">
+  <h1>Our Pets</h1>
+  <div class="pets_box">
+    {% for pet in pets %}
+
+    <div class="pets_box__single">
+      <div class="pet_img">
         {% if pet.image %}
         <img src="{{pet.image.url}}" alt="{{ pet.name }}" />
         {% endif %}
       </div>
-
-      <div>
-        <h2>{{ pet.name }}</h2>
+      <div class="pet-info">
+         <h2>{{ pet.name }}</h2>
         <p>{{ pet.description }}</p>
         <p>Breed: {{ pet.breed }}</p>
         <p>Sex: {{ pet.sex }}</p>
@@ -30,8 +31,9 @@
         {% endcomment %}
         <a href="">see more</a>
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
+</div>
 
 {% endblock  %}

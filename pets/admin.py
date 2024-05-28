@@ -7,6 +7,8 @@ admin.site.register(models.Pet)
 admin.site.register(models.VolunteerApplication)
 admin.site.register(models.AdoptionFosterApplication)
 admin.site.register(models.About)
+admin.site.register(models.BlogPost)
+admin.site.register(models.Donations)
 
 # change the name of  the admin panel 
 

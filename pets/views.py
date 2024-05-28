@@ -2,14 +2,14 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from . import models
 
-def index(request):
+def home(request):
     pets = models.Pet.objects.all()
     # return HttpResponse([ "<li>" + str(pet) + "</li>"  for pet in pets])
-    return render(request, "index.html", {"pets": pets})
+    return render(request, "home.html", {"pets": pets})
 
 
 def contact (request):
-    return HttpResponse("<p>contact</p>")
+    return render(request, "contact.html")
 
 def about(request):
     about = models.About.objects.all()
@@ -30,7 +30,9 @@ def donate(request):
      return render(request, "donate.html",)
  
 def blog(request):
-     return render(request, "blog.html",)
+    blog_posts = models.BlogPost.objects.all()
+    return render(request, "blog.html", {"blog": blog_posts})
+
 
 def adopt_this(request, pet_id):
     pet = models.Pet.objects.get(pk=pet_id)

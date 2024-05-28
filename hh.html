@@ -1,0 +1,64 @@
+<div class="pets">
+  <h1>Our Pets</h1>
+  <div class="pets_box">
+    {% for pet in pets %}
+
+    <div class="pets_box__single">
+      <div class="pet_img">
+        {% if pet.image %}
+        <img src="{{pet.image.url}}" alt="{{ pet.name }}" />
+        {% endif %}
+      </div>
+      <div class="pet-info">
+         <h2>{{ pet.name }}</h2>
+        <p>{{ pet.description }}</p>
+        <p>Breed: {{ pet.breed }}</p>
+        <p>Sex: {{ pet.sex }}</p>
+        {% comment %}
+        <p>Size: {{ pet.size }}</p>
+        {% endcomment %}
+        <p>Age: {{ pet.age }}</p>
+        {% comment %}
+        <p>Color: {{ pet.color }}</p>
+        {% endcomment %}
+        <a href="">see more</a>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- <h1>Our Pets</h1>
+    <div class="pets_box">
+      {% for pet in pets %}
+     
+
+     <div class="pets_box__single">
+
+      <div class="pet_img" >
+        {% if pet.image %}
+        <img src="{{pet.image.url}}" alt="{{ pet.name }}" />
+        {% endif %}
+      </div>
+
+      <div class="pet_info">
+        <h2>{{ pet.name }}</h2>
+        <p>{{ pet.description }}</p>
+        <p>Breed: {{ pet.breed }}</p>
+        <p>Sex: {{ pet.sex }}</p>
+        {% comment %}
+        <p>Size: {{ pet.size }}</p>
+        {% endcomment %}
+        <p>Age: {{ pet.age }}</p>
+        {% comment %}
+        <p>Color: {{ pet.color }}</p>
+        {% endcomment %}
+        <a href="">see more</a>
+     
+      </div>
+      {% endfor %}
+        </div>
+       </div>
+    </div>
+  </div>
+   </div>
+ -->
